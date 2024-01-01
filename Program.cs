@@ -1,26 +1,16 @@
-﻿//hafta kunlari
-string operation = Console.ReadLine();
+﻿System.Console.Write("result :   ");
+int x = 15;
+int y = 10;
 
-string dushanba = "monday";
-string seshanba = "tuesday";
-string chorshanba = "wednesday";
-string payshanba = "thursday";
-string juma = "friday";
-string shanba = "saturday";
-string yakshanba = "sunday";
-
-
-string result = operation switch 
-
+if(x > y)
 {
-    "dushanba" => $"{dushanba}",
-    "seshanba" => $"{seshanba}",
-    "chorshanba" => $"{chorshanba}",
-    "payshanba" => $"{payshanba}",
-    "juma" => $"{juma}",
-    "shanba" => $"{shanba}",
-    "yakshanba" => $"{yakshanba}",
-         _ => "Operation Not Found!"
-};
-
-System.Console.WriteLine(result);
+    System.Console.WriteLine("x is greater than y !");
+}
+else if(x < y)
+{
+    System.Console.WriteLine("x is less than y");  
+}
+else
+{
+     System.Console.WriteLine("x is equal to y or cannot be compared");
+}
